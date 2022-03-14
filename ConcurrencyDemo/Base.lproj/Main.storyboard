@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-<<<<<<< HEAD
+
         <!--GCD-->
-=======
+
         <!--OperationQueue-->
         <scene sceneID="WXg-8K-8Zk">
             <objects>
@@ -188,7 +188,6 @@
             <point key="canvasLocation" x="2815.9420289855075" y="234.375"/>
         </scene>
         <!--GCDViewController-->
->>>>>>> myBranch
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
