@@ -15,6 +15,10 @@
 		35F3055C27D624E70080E4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F3055A27D624E70080E4D5 /* Main.storyboard */; };
 		35F3055E27D624E70080E4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F3055D27D624E70080E4D5 /* Assets.xcassets */; };
 		35F3056127D624E70080E4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F3055F27D624E70080E4D5 /* LaunchScreen.storyboard */; };
+		C9EA6F4C27D70AFB00E014CE /* OperationQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EA6F4B27D70AFB00E014CE /* OperationQueueController.swift */; };
+		C9F2642C27D768BE00FF6628 /* AddOpertationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2642B27D768BE00FF6628 /* AddOpertationViewController.swift */; };
+		C9F2642E27D76ED800FF6628 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2642D27D76ED800FF6628 /* Downloader.swift */; };
+		C9F2643127D776FC00FF6628 /* BlockOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F2643027D776FC00FF6628 /* BlockOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		35F3055D27D624E70080E4D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35F3056027D624E70080E4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35F3056227D624E70080E4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EA6F4B27D70AFB00E014CE /* OperationQueueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueueController.swift; sourceTree = "<group>"; };
+		C9F2642B27D768BE00FF6628 /* AddOpertationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOpertationViewController.swift; sourceTree = "<group>"; };
+		C9F2642D27D76ED800FF6628 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		C9F2643027D776FC00FF6628 /* BlockOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +70,31 @@
 			children = (
 				35F3055427D624E70080E4D5 /* AppDelegate.swift */,
 				35F3055627D624E70080E4D5 /* SceneDelegate.swift */,
+<<<<<<< HEAD
+				35F3055827D624E70080E4D5 /* ViewController.swift */,
+				C9F2642F27D776DD00FF6628 /* OperationQueue */,
+=======
 				35AF13BE27D70D64008015BD /* GCDViewController.swift */,
 				35AF13C227D72390008015BD /* SeriallVIewController.swift */,
 				35AF13C627D757DC008015BD /* ConcurrentViewController.swift */,
+>>>>>>> myBranch
 				35F3055A27D624E70080E4D5 /* Main.storyboard */,
 				35F3055D27D624E70080E4D5 /* Assets.xcassets */,
 				35F3055F27D624E70080E4D5 /* LaunchScreen.storyboard */,
 				35F3056227D624E70080E4D5 /* Info.plist */,
 			);
 			path = ConcurrencyDemo;
+			sourceTree = "<group>";
+		};
+		C9F2642F27D776DD00FF6628 /* OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				C9EA6F4B27D70AFB00E014CE /* OperationQueueController.swift */,
+				C9F2642B27D768BE00FF6628 /* AddOpertationViewController.swift */,
+				C9F2642D27D76ED800FF6628 /* Downloader.swift */,
+				C9F2643027D776FC00FF6628 /* BlockOperation.swift */,
+			);
+			path = OperationQueue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +168,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				C9F2642C27D768BE00FF6628 /* AddOpertationViewController.swift in Sources */,
+				35F3055927D624E70080E4D5 /* ViewController.swift in Sources */,
+				C9F2642E27D76ED800FF6628 /* Downloader.swift in Sources */,
+=======
+>>>>>>> myBranch
 				35F3055527D624E70080E4D5 /* AppDelegate.swift in Sources */,
 				35AF13C327D72390008015BD /* SeriallVIewController.swift in Sources */,
 				35F3055727D624E70080E4D5 /* SceneDelegate.swift in Sources */,
+<<<<<<< HEAD
+				C9EA6F4C27D70AFB00E014CE /* OperationQueueController.swift in Sources */,
+				C9F2643127D776FC00FF6628 /* BlockOperation.swift in Sources */,
+=======
 				35AF13C727D757DC008015BD /* ConcurrentViewController.swift in Sources */,
 				35AF13BF27D70D64008015BD /* GCDViewController.swift in Sources */,
+>>>>>>> myBranch
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+<<<<<<< HEAD
+        <!--GCD-->
+=======
         <!--OperationQueue-->
         <scene sceneID="WXg-8K-8Zk">
             <objects>
@@ -185,6 +188,7 @@
             <point key="canvasLocation" x="2815.9420289855075" y="234.375"/>
         </scene>
         <!--GCDViewController-->
+>>>>>>> myBranch
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -249,6 +253,121 @@
             </objects>
             <point key="canvasLocation" x="1113.0434782608697" y="-36.160714285714285"/>
         </scene>
+        <!--OperationQueue-->
+        <scene sceneID="ADM-YW-z8f">
+            <objects>
+                <viewController id="cZ2-5c-7Mh" customClass="OperationQueueController" customModule="ConcurrencyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y76-XH-Foa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2a-Xn-vpa">
+                                <rect key="frame" x="151" y="236" width="114" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="AddOperation"/>
+                                <connections>
+                                    <segue destination="M7b-7e-gOv" kind="show" id="6YZ-sT-IGw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le8-PR-pIV">
+                                <rect key="frame" x="144" y="571" width="128" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Block Operation"/>
+                                <connections>
+                                    <segue destination="uWi-Md-Ar1" kind="show" id="weP-21-CTZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Dn-Vv-ZYa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Dn-Vv-ZYa" firstAttribute="bottom" secondItem="le8-PR-pIV" secondAttribute="bottom" constant="211" id="79r-Jf-dIx"/>
+                            <constraint firstItem="8Dn-Vv-ZYa" firstAttribute="trailing" secondItem="le8-PR-pIV" secondAttribute="trailing" constant="142" id="elG-AB-DUz"/>
+                            <constraint firstItem="Q2a-Xn-vpa" firstAttribute="leading" secondItem="8Dn-Vv-ZYa" secondAttribute="leading" constant="151" id="hsx-WY-lX6"/>
+                            <constraint firstItem="Q2a-Xn-vpa" firstAttribute="top" secondItem="8Dn-Vv-ZYa" secondAttribute="top" constant="192" id="ihc-GA-B6c"/>
+                            <constraint firstItem="8Dn-Vv-ZYa" firstAttribute="trailing" secondItem="Q2a-Xn-vpa" secondAttribute="trailing" constant="149" id="sju-I8-uuO"/>
+                            <constraint firstItem="le8-PR-pIV" firstAttribute="leading" secondItem="8Dn-Vv-ZYa" secondAttribute="leading" constant="144" id="zKa-r2-QUv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="OperationQueue" id="OGG-xl-4mc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="glI-NR-DzQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140.5797101449277" y="629.46428571428567"/>
+        </scene>
+        <!--AddOperation-->
+        <scene sceneID="2Qd-J9-L5r">
+            <objects>
+                <viewController id="M7b-7e-gOv" userLabel="AddOperation" customClass="AddOperation" customModule="ConcurrencyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J3I-EA-hCa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A5g-mS-T0g">
+                                <rect key="frame" x="0.0" y="89" width="414" height="664"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XHH-K8-jRj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="332"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wDr-Qw-xNv">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="332"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qU5-XV-NiQ">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="332"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ciS-MA-hkY">
+                                        <rect key="frame" x="0.0" y="332" width="414" height="332"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WgJ-t7-Zmq">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="332"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jaR-eE-o5x">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="332"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ciS-MA-hkY" firstAttribute="top" secondItem="XHH-K8-jRj" secondAttribute="bottom" id="urM-tS-bar"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LE5-Xk-UA6">
+                                <rect key="frame" x="277" y="6" width="94" height="75"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="M7b-7e-gOv" eventType="touchDown" id="qGF-y6-Aot"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SE2-yX-Lg0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A5g-mS-T0g" firstAttribute="leading" secondItem="SE2-yX-Lg0" secondAttribute="leading" id="1ej-A4-ugp"/>
+                            <constraint firstItem="LE5-Xk-UA6" firstAttribute="leading" secondItem="SE2-yX-Lg0" secondAttribute="leading" constant="277" id="Esj-sX-OHn"/>
+                            <constraint firstItem="SE2-yX-Lg0" firstAttribute="bottom" secondItem="A5g-mS-T0g" secondAttribute="bottom" constant="55" id="H9F-yd-I71"/>
+                            <constraint firstItem="A5g-mS-T0g" firstAttribute="trailing" secondItem="SE2-yX-Lg0" secondAttribute="trailing" id="S2y-xw-wZj"/>
+                            <constraint firstItem="SE2-yX-Lg0" firstAttribute="trailing" secondItem="LE5-Xk-UA6" secondAttribute="trailing" constant="43" id="UMx-SU-C0s"/>
+                            <constraint firstItem="LE5-Xk-UA6" firstAttribute="top" secondItem="SE2-yX-Lg0" secondAttribute="top" constant="6" id="bag-4z-hlh"/>
+                            <constraint firstItem="A5g-mS-T0g" firstAttribute="centerY" secondItem="J3I-EA-hCa" secondAttribute="centerY" id="dtr-Z4-elU"/>
+                            <constraint firstItem="A5g-mS-T0g" firstAttribute="top" secondItem="LE5-Xk-UA6" secondAttribute="bottom" constant="8" symbolic="YES" id="egj-r6-mQJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="TQL-IA-O9g"/>
+                    <navigationItem key="navigationItem" id="0Hq-eV-5G0"/>
+                    <connections>
+                        <outlet property="image1" destination="wDr-Qw-xNv" id="0NW-h1-lq8"/>
+                        <outlet property="image2" destination="qU5-XV-NiQ" id="UpH-ua-tBi"/>
+                        <outlet property="image3" destination="WgJ-t7-Zmq" id="kCy-Q3-Bp7"/>
+                        <outlet property="image4" destination="jaR-eE-o5x" id="HiN-PJ-9LO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhD-Q4-t8I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2297" y="-49"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kdX-fF-5Wk">
             <objects>
@@ -261,12 +380,85 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="l5c-RO-PJE"/>
-                        <segue destination="JTQ-j2-Sdl" kind="relationship" relationship="viewControllers" id="Jvd-Ut-c5I"/>
+                        <segue destination="cZ2-5c-7Mh" kind="relationship" relationship="viewControllers" id="pkc-Wd-wKi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Byx-ZG-6sd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
+            <point key="canvasLocation" x="93" y="98"/>
+        </scene>
+        <!--BlockOperation-->
+        <scene sceneID="jgm-Mv-4yy">
+            <objects>
+                <viewController id="uWi-Md-Ar1" userLabel="BlockOperation" customClass="BlockOperationController" customModule="ConcurrencyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tu9-QU-meR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mdr-xf-t8J">
+                                <rect key="frame" x="0.0" y="89" width="414" height="664"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="q1l-sp-HkK">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="332"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dQR-FA-0a9">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="332"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gzf-O9-gCK">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="332"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aKC-Tj-56a">
+                                        <rect key="frame" x="0.0" y="332" width="414" height="332"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ml-xa-iMr">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="332"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z9O-OB-W38">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="332"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aKC-Tj-56a" firstAttribute="top" secondItem="q1l-sp-HkK" secondAttribute="bottom" id="N8W-Dn-3Aw"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2l-vv-BoP">
+                                <rect key="frame" x="277" y="6" width="94" height="75"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start"/>
+                                <connections>
+                                    <action selector="start:" destination="uWi-Md-Ar1" eventType="touchDown" id="xj1-M1-l2u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="blz-34-By5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mdr-xf-t8J" firstAttribute="leading" secondItem="blz-34-By5" secondAttribute="leading" id="0XE-fr-Erg"/>
+                            <constraint firstItem="blz-34-By5" firstAttribute="trailing" secondItem="z2l-vv-BoP" secondAttribute="trailing" constant="43" id="AAe-lJ-CDl"/>
+                            <constraint firstItem="z2l-vv-BoP" firstAttribute="leading" secondItem="blz-34-By5" secondAttribute="leading" constant="277" id="Iep-75-L54"/>
+                            <constraint firstItem="z2l-vv-BoP" firstAttribute="top" secondItem="blz-34-By5" secondAttribute="top" constant="6" id="MfG-6T-rOb"/>
+                            <constraint firstItem="mdr-xf-t8J" firstAttribute="top" secondItem="z2l-vv-BoP" secondAttribute="bottom" constant="8" symbolic="YES" id="ZQN-vW-ZKL"/>
+                            <constraint firstItem="blz-34-By5" firstAttribute="bottom" secondItem="mdr-xf-t8J" secondAttribute="bottom" constant="55" id="gbc-XS-kaI"/>
+                            <constraint firstItem="mdr-xf-t8J" firstAttribute="centerY" secondItem="tu9-QU-meR" secondAttribute="centerY" id="i09-OA-9hJ"/>
+                            <constraint firstItem="mdr-xf-t8J" firstAttribute="trailing" secondItem="blz-34-By5" secondAttribute="trailing" id="nql-dn-L0O"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="tJS-Ci-0kq"/>
+                    <navigationItem key="navigationItem" id="XTL-i1-pzw"/>
+                    <connections>
+                        <outlet property="image1" destination="dQR-FA-0a9" id="Yai-am-f7J"/>
+                        <outlet property="image2" destination="Gzf-O9-gCK" id="Z7R-Z2-2YL"/>
+                        <outlet property="image3" destination="2Ml-xa-iMr" id="1Jk-p9-kPf"/>
+                        <outlet property="image4" destination="z9O-OB-W38" id="0CV-uj-Dbd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCt-i2-S07" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357" y="804"/>
         </scene>
     </scenes>
     <resources>
